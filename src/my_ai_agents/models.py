@@ -15,7 +15,7 @@ DEFAULT_MODEL_INFO: ModelInfo = ModelInfo(
 
 
 def get_openai_model_client(
-    model: str, model_info: ModelInfo = DEFAULT_MODEL_INFO
+    model: str = "gpt-4.1-nano-2025-04-14", model_info: ModelInfo = DEFAULT_MODEL_INFO
 ) -> OpenAIChatCompletionClient:
     """
     Get an OpenAI model client configured with the settings.
